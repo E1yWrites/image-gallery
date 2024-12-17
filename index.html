@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Lanz!</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malabanan - Activity 3</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <body>
-
-    <div class="background"></div>
-    <div class="overlay"></div>
-
-    <div class="hero">
-        <h1>Lorenz Lanz V. Malabanan</h1>
-        <p>1st Year BSIT-1B <BSIT-B></BSIT-B> | Tech Enthusiast | Aspiring Game Develeoper</p>
-    </div>
-
-    <div class="section about">
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate developer with experience in building interactive and dynamic web applications. I specialize in both front-end and back-end technologies and enjoy learning new skills to stay up-to-date with the latest in tech. I love creating solutions that make a difference and collaborating with like-minded individuals to bring ideas to life.
-        </p>
-        <p>
-            Inspired by Socrates, I believe in pursuing an examined life, <b>seeking knowledge</b>, and <em>staying curious</em>. My journey in tech is about connecting ideas and people—building things that make a difference.
-        </p>
-    </div>
-
-    <div class="section social-media">
-        <a href="https://www.youtube.com/@E1yuVAL" target="_blank">
-            <img src="https://cdn.icon-icons.com/icons2/639/PNG/512/social_media_logo_you_tube_icon-icons.com_59065.png" alt="YouTube">
-            <h3>YouTube</h3>
-        </a>
-        <a href="https://facebook.com/renzsenpai/" target="_blank">
-            <img src="https://cdn.icon-icons.com/icons2/639/PNG/512/social_media_logo_facebook_icon-icons.com_59059.png" alt="Facebook">
-            <h3>Facebook</h3>
-        </a>
-        <a href="https://instagram.com/lorenzlanz_" target="_blank">
-            <img src="https://cdn.icon-icons.com/icons2/1233/PNG/512/1492718764-instagram_83597.png" alt="Instagram">
-            <h3>Instagram</h3>
-        </a>
-    </div>
-
-    <div class="chatbot-icon" onclick="toggleChatbot()">
-        <img src="https://cdn.icon-icons.com/icons2/3911/PNG/512/chatbot_logo_icon_247373.png" alt="Chatbot Icon">
-    </div>
-
-    <div class="chatbot-window" id="chatbot-window">
-        <h2>Live Support!</h2>
-        <p><em>Don't know what to do? type "help"</em></p>
-        <div class="chat-box" id="chat-box">
-            <div id="chat-output"></div>
+  <div class="skw-pages">
+    <div class="skw-page skw-page-1 active">
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content"></div>
         </div>
-        <input type="text" id="user-input" placeholder="Type your message here">
-        <button onclick="handleMessage()">Send</button>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            <h2 class="skw-page__heading">Malabanan, Lorenz Lanz V.</h2>
+            <p class="skw-page__description">BSIT - 1B</p>
+            <p class="skw-page__description1"><br><br>A passionate 19-year-old developer skilled in creating interactive web applications, with expertise in both front-end and back-end technologies. This project showcases different images and more!</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <footer>
-        <p>Copyright &copy; 2024 | Property of Lorenz Malabanan</p>
-        <p>LYCEUM OF THE PHILIPPINES UNIVERSITY - BATANGAS</p>
-        <p>College of Computing Arts & Sciences</p>
-    </footer>
-    <script src="js/script.js"></script>
-
+    <div class="skw-page skw-page-2">
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            <h2 class="skw-page__heading">月が綺麗ですね</h2>
+            <p class="skw-page__description">" The moon is beautiful, yes we know. "</p>
+            <p class="skw-page__description1"><br><br>The moon is a poetic muse in the night sky, casting a tranquil glow that whispers secrets of the cosmos. Its silvery light dances on still waters, stirring dreams and inspiring hearts to reach for the stars.</p>
+          </div>
+        </div>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="skw-page skw-page-3">
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content"></div>
+        </div>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            <h2 class="skw-page__heading">Adrenaline.</h2>
+            <p class = "skw-page__description">Blood flowing, Energy rising.</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skw-page skw-page-4">
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            <h2 class="skw-page__heading">Recommendations</h2>
+            <p class="skw-page__description">Here are some of my recommendations:</p>
+          </div>
+        </div>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="skw-page skw-page-5">
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content"></div>
+        </div>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            <h2 class="skw-page__heading">Epic finale</h2>
+            <p class="skw-page__description">
+              Feel free to check 
+              <a class="skw-page__link" href="https://codepen.io/suez/pens/public/" target="_blank">my other pens</a> and follow me on 
+              <a class="skw-page__link" href="https://twitter.com/NikolayTalanov" target="_blank">Twitter</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
 </body>
 </html>
-
