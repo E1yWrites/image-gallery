@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
 .container {
   margin: auto;
   padding: 0 1rem;
@@ -542,11 +546,11 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
   color: #787878;
-  background: #fff;
+  background: #ffffff;
   text-rendering: optimizeLegibility;
 }
 
@@ -560,10 +564,10 @@ a {
   transition: all 0.2s ease;
 }
 a:hover {
-  color: #2e2e2e;
+  color: #001B3D;
 }
 a.active {
-  color: #2e2e2e;
+  color: #001B3D;
 }
 
 nav {
@@ -603,7 +607,7 @@ img {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
@@ -619,23 +623,23 @@ img:hover {
   white-space: nowrap;
   display: none;
   padding: 1rem;
-  background: #ffffff60;
+  background: #ffffff96;
   font-weight: 400;
   margin-top: 1.25rem;
   margin-left: -2rem;
   margin-trim: 1;
-  
+  border-radius: 10px; /* Rounded corners for hover box */
 }
 
 .title {
-  color: #2e2e2e;
+  color: #ff9f32;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .category {
   font-size: 1rem;
-  color: #787878;
+  color: #000000b9;
 }
 
 .img-content {
@@ -648,12 +652,6 @@ img:hover {
 
 .social li {
   display: inline-block;
-}
-
-footer {
-  padding: 1rem 0;
-  background: #f7f7f7;
-  text-align: center;
 }
 
 @supports (display: grid) {
@@ -683,3 +681,120 @@ footer {
     padding: 1rem 0;
   }
 }
+.splash-container {
+  background-color: #FFFFFF; /* White background */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0; /* Ensure it starts from the top-left corner */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  animation: fadeOut 1s ease-in-out 2s forwards;
+}
+
+.splash-text {
+  color: #001B3D; /* Darker blue text */
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  display: flex; /* Use flexbox for inline spans */
+  gap: 0.2rem; /* Add space between spans */
+}
+
+.splash-text span {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.splash-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.splash-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.splash-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.splash-text span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.splash-text span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.splash-text span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+}
+
+.above-footer-container {
+  position: relative;
+  padding: 4rem 0;  
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  height: auto;
+}
+
+hehe {
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  color: #333;
+  font-size: 1.5rem;
+  font-family: "Space Grotesk";
+  transition: transform 0.3s ease;
+  margin-top: 1rem;
+}
+
+hehe:hover {
+  transform: scale(1.4);
+}
+
+h1 {
+  font-weight: 100;
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  color: #333;  /* Dark color to match other text */
+  transition: transform 2s ease;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 1rem 0;
+  background: #f1f0f0;
+  text-align: center;
+  position: relative;
+}
+
+

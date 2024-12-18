@@ -1,3 +1,7 @@
+setTimeout(() => {
+  document.getElementById('splash').style.display = 'none';
+}, 3000);
+
 const imgContent = document.querySelectorAll(".img-content-hover");
 
 function showImgContent(e) {
