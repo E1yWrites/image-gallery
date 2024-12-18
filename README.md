@@ -5,7 +5,7 @@ Malabanan, Lorenz Lanz's trial-run for a seamless skewed javascript operated scr
 
 ## Demo
 
-https://e1ywrites.github.io/skewed-scroll/
+https://e1ywrites.github.io/image-gallery/
 
 
 ## Acknowledgements
